@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --blue: #4E5BEE;
+    --red: #FF5757;
+    --gray: #F8F8F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    background: var(--blue);
+    min-height: 100vh;
+    padding: 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.form-group .form-logo {
+    height: 80px;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.form-group .form-logo svg {
+    height: 100%;
+    width: 100%;
+}
+
+.form-group .form-content {
+    padding: 1rem;
+    min-height: 200px;
+    min-width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-content .input-group {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    background: transparent;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 2px solid #fff;
+}
+
+.form-content .input-group svg {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: calc(5px + 0.2rem);
+    left: calc(5px + 0.5rem);
+}
+
+.form-content .input-group input {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    padding-left: 35px;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-content .btn-submit {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 2rem;
+    border: none;
+    background: var(--gray);
+
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-content .btn-submit:hover {
+    filter: brightness(0.9);
+}
+
+.form-group .help {
+    text-align: center;
+}
+
+.form-group .help p {
+    padding-bottom: 0.2rem;
+}
+
+.form-group .help a:hover {
+    filter: brightness(0.8);
+}
+
+.undraw {
+    width: 60%;
+    position: relative;
+    left: -12%;
+    max-height: 100vh;
+    height: 100%;
+}
+
+.undraw svg {
+    height: 100vh;
+    width: 100%;
+}
+
+@media(max-width: 1024px) { 
+    .form-group {
+        width: 50%;
+    }
+
+    .undraw {
+        left: -5%;
+    }
+}
+
+@media(max-width: 768px) {
+    .undraw {
+        display: none;
+    }
+
+    .form-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-group .form-logo {
+        margin-bottom: 2rem;
+    }
+
+    .form-group .form-content {
+        margin-bottom: 2rem;
+    }
+}
